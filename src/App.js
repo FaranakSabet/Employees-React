@@ -18,3 +18,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }))
+
+const columns = [
+  { field: "id", headerName: "ID", width: 70 },
+  { field: "firstname", headerName: "First name", width: 130 },
+  { field: "lastname", headerName: "Last name", width: 130 },
+  { field: "department", headerName: "Department", width: 180 },
+  { field: "position", headerName: "Position", width: 160 },
+  { field: "salary", headerName: "Salary", width: 130 },
+]
