@@ -27,3 +27,25 @@ const columns = [
   { field: "position", headerName: "Position", width: 160 },
   { field: "salary", headerName: "Salary", width: 130 },
 ]
+function App() {
+  const classes = useStyles()
+  return (
+    <>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h5" className={classes.title}>
+            My Employees
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Container>
+        <h1>Employees List</h1>
+        <Paper style={{ height: 700, width: "100%" }}>
+          <DataGrid rows={Employees} columns={columns} pageSize={11} checkboxSelection />
+        </Paper>
+      </Container>
+    </>
+  )
+}
+
+export default App
